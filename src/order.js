@@ -1,5 +1,5 @@
-function takeOrder() {
-
+function takeOrder(order, arrOfOrders) {
+  arrOfOrders.length < 3 ? arrOfOrders.push(order) : arrOfOrders
 }
 
 function refundOrder() {
