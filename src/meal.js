@@ -9,11 +9,11 @@ nameMenuItem('Taco');
 
 
 function createMenuItem(itemName, itemPrice, itemType) {
-  return { name : nameMenuItem(itemName), price : itemPrice, type : itemType };
+  return { name : itemName, price : itemPrice, type : itemType };
 }
 
-// var menuItem = nameMenuItem('French Toast');
-console.log(createMenuItem('French Toast', 10.99, "breakfast"));
+var menuItem = nameMenuItem('French Toast');
+console.log(createMenuItem(menuItem, 10.99, "breakfast"));
 
 
 
