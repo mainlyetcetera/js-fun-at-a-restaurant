@@ -2,8 +2,8 @@ function takeOrder(order, arrOfOrders) {
   arrOfOrders.length < 3 ? arrOfOrders.push(order) : arrOfOrders
 }
 
-function refundOrder() {
-
+function refundOrder(orderNumber, arrOfOrders) {
+  arrOfOrders.splice(orderNumber - 1, 1);
 }
 
 function listItems() {
