@@ -15,12 +15,17 @@ function createMenuItem(itemName, itemPrice, itemType) {
 var menuItem = nameMenuItem('French Toast');
 console.log(createMenuItem(menuItem, 10.99, "breakfast"));
 
+function addIngredients(ingredient, arrOfIngredients) {
+  if (!arrOfIngredients.includes(ingredient)) {
+    arrOfIngredients.push(ingredient);
+  }
+}
 
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
-  // addIngredients,
+  addIngredients,
   // formatPrice,
   // decreasePrice,
   // createRecipe
