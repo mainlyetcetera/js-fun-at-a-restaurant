@@ -1,5 +1,5 @@
 function takeOrder(order, arrOfOrders) {
-  arrOfOrders.length < 3 ? arrOfOrders.push(order) : arrOfOrders
+  arrOfOrders.length < 3 ? arrOfOrders.push(order) : arrOfOrders;
 }
 
 function refundOrder(orderNumber, arrOfOrders) {
@@ -22,7 +22,7 @@ function listItems(arrOfOrders) {
 }
 
 function searchOrder(arrOfOrders, orderName) {
-  return listItems(arrOfOrders).includes(orderName) ? true : false
+  return listItems(arrOfOrders).includes(orderName) ? true : false;
 }
 
 module.exports = {
