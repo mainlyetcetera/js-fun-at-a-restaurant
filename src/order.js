@@ -21,8 +21,8 @@ function listItems(arrOfOrders) {
   return result;
 }
 
-function searchOrder() {
-
+function searchOrder(arrOfOrders, orderName) {
+  return listItems(arrOfOrders).includes(orderName) ? true : false
 }
 
 module.exports = {
