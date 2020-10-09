@@ -21,30 +21,6 @@ function listItems(arrOfOrders) {
   return result;
 }
 
-var input = [
-{
-  orderNumber: 1,
-  item: "burger",
-  price: "8.99",
-  orderType: "delivery",
-  status: "accepted"
-},
-{
-  orderNumber: 2,
-  item: "blt sandwich",
-  price: "5.99",
-  orderType: "delivery",
-  status: "accepted"
-},
-{
-  orderNumber: 3,
-  item: "rueben",
-  price: "8.99",
-  orderType: "delivery",
-  status: "accepted"
-}];
-console.log(listItems(input));
-
 function searchOrder() {
 
 }
