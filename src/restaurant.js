@@ -1,5 +1,12 @@
 function createRestaurant(restaurant) {
-  return { name : restaurant };
+  return {
+    name : restaurant,
+    menus : {
+      breakfast : [],
+      lunch : [],
+      dinner : []
+    },
+  };
 }
 
 function addMenuItem() {
