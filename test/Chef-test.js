@@ -41,7 +41,7 @@ describe("Chef (class)", function() {
     assert.deepEqual(chef.restaurant, restaurant);
   });
 
-  it.skip("should be able to great a customer by name", function() {
+  it.skip("should be able to greet a customer by name", function() {
     var scott = new Chef("Scott");
 
     assert.equal(scott.greetCustomer("Will"), "Hello, Will!");
@@ -60,10 +60,10 @@ describe("Chef (class)", function() {
     var restaurant = createRestaurant("Average Bakery");
     var chef = new Chef("Hannah", restaurant);
 
-    var foodItem = { 
+    var foodItem = {
       name: "Cinnamon Rolls",
       price: "4.49",
-      type: "breakfast" 
+      type: "breakfast"
     };
 
     addMenuItem(chef.restaurant, foodItem);
