@@ -11,7 +11,10 @@ function createRestaurant(restaurantName) {
 
 function addMenuItem(restaurant, menuItem) {
   var type = menuItem.type;
-  restaurant.menus[type].push(menuItem);
+  if (!restaurant.menus[type].includes(menuItem)) {
+    restaurant.menus[type].push(menuItem);
+  }
+  // restaurant.menus[type].includes(menuItem) ? restaurant.menus[type] : restaurant.menus[type].push(menuItem)  
 }
 
 function removeMenuItem() {
