@@ -14,13 +14,13 @@ describe("Chef (class)", function() {
     assert.instanceOf(hannah, Chef);
   });
 
-  it.skip("should have a name", function() {
+  it("should have a name", function() {
     var chef = new Chef("Hannah");
 
     assert.equal(chef.name, "Hannah");
   });
 
-  it.skip("should be able to have a different name", function () {
+  it("should be able to have a different name", function () {
     var chef = new Chef("Casey");
 
     assert.equal(chef.name, "Casey");
