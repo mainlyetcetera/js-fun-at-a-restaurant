@@ -9,8 +9,8 @@ function createRestaurant(restaurantName) {
   };
 }
 
-function addMenuItem() {
-
+function addMenuItem(restaurant, menuItem) {
+  restaurant.menus.lunch.push(menuItem);
 }
 
 function removeMenuItem() {
