@@ -8,7 +8,7 @@ var {
 
 
 describe("Chef (class)", function() {
-  it.skip('should instantiate a chef object', function () {
+  it('should instantiate a chef object', function () {
     var hannah = new Chef("Hannah");
 
     assert.instanceOf(hannah, Chef);
