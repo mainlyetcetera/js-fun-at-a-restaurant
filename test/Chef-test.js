@@ -26,7 +26,7 @@ describe("Chef (class)", function() {
     assert.equal(chef.name, "Casey");
   });
 
-  it.skip("should work at a restaurant", function() {
+  it("should work at a restaurant", function() {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Hannah", restaurant);
 
@@ -34,7 +34,7 @@ describe("Chef (class)", function() {
     assert.deepEqual(chef.restaurant, restaurant);
   });
 
-  it.skip("should be able to work at a different restaurant", function () {
+  it("should be able to work at a different restaurant", function () {
     var restaurant = createRestaurant("Amazing Bakery");
     var chef = new Chef("Scott", restaurant);
 
