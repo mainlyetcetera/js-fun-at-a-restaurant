@@ -1,5 +1,5 @@
-function createRestaurant() {
-
+function createRestaurant(restaurant) {
+  return { name : restaurant };
 }
 
 function addMenuItem() {
