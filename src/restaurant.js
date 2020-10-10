@@ -10,7 +10,8 @@ function createRestaurant(restaurantName) {
 }
 
 function addMenuItem(restaurant, menuItem) {
-  restaurant.menus.lunch.push(menuItem);
+  var type = menuItem.type;
+  restaurant.menus[type].push(menuItem);
 }
 
 function removeMenuItem() {
