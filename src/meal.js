@@ -1,6 +1,4 @@
-function nameMenuItem(menuItemName) {
-  return `Delicious ${menuItemName}`;
-}
+const nameMenuItem = menuItemName => `Delicious ${menuItemName}`;
 
 function createMenuItem(itemName, itemPrice, itemType) {
   return { name : itemName, price : itemPrice, type : itemType };
