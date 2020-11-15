@@ -1,14 +1,5 @@
-// function takeOrder(order, arrOfOrders) {
-//   if (arrOfOrders.length < 3) {
-//     arrOfOrders.push(order);
-//   }
-//   // arrOfOrders.length < 3 ? arrOfOrders.push(order) : arrOfOrders;
-// }
-
-const takeOrder = (order, orders) => {
-  if (orders.length < 3) {
-    orders.push(order);
-  }
+const takeOrder = (order, orders) => {  
+  orders.length < 3 ? orders.push(order) : orders;
 }
 
 function refundOrder(orderNumber, arrOfOrders) {
