@@ -1,10 +1,6 @@
 const nameMenuItem = menuItemName => `Delicious ${menuItemName}`;
 const createMenuItem = (name, price, type) => ({name, price, type});
-const addIngredients = (ingredient, ingredients) => {
-  if (!ingredients.includes(ingredient)) {
-    ingredients.push(ingredient);
-  }
-}
+const addIngredients = (ingredient, ingredients) => !ingredients.includes(ingredient) ? ingredients.push(ingredient) : ingredient;
 
 function formatPrice(price) {
   return '$' + price;
