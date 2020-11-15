@@ -1,8 +1,5 @@
 const nameMenuItem = menuItemName => `Delicious ${menuItemName}`;
-
-function createMenuItem(itemName, itemPrice, itemType) {
-  return { name : itemName, price : itemPrice, type : itemType };
-}
+const createMenuItem = (name, price, type) => ({name, price, type});
 
 function addIngredients(ingredient, arrOfIngredients) {
   if (!arrOfIngredients.includes(ingredient)) {
