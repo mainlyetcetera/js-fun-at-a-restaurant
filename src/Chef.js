@@ -4,13 +4,8 @@ class Chef {
     this.restaurant = restaurant;
   }
 
-  greetCustomer(name, isMorning) {
-    if (isMorning) {
-      return `Good morning, ${name}!`;
-    } else {
-      return `Hello, ${name}!`;
-    }
-    // return isMorning ? `Good morning, ${name}!` : `Hello, ${name}!`
+  greetCustomer(name, isMorning) {    
+    return isMorning ? `Good morning, ${name}!` : `Hello, ${name}!`;
   }
 
   checkForFood(foodItem) {
@@ -20,7 +15,7 @@ class Chef {
     } else {
       return `Sorry, we aren't serving ${foodItem.name} today.`;
     }
-    // return this.restaurant.menus[foodItemType].includes(foodItem) ? `Yes, we're serving ${foodItem.name} today!` : `Sorry, we aren't serving ${foodItem.name} today.`;
+
   }
 
 }
