@@ -54,11 +54,7 @@ stockCount >= 1 ? console.log(`I'm going to eat some ${food.toLowerCase()}!`) : 
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
 
-if (isFavorite) {
-  console.log(`My favorite food is ${food.toLowerCase()}!`);
-} else {
-  console.log(`I recently ate ${food.toLowerCase()}.`);
-}
+isFavorite ? console.log(`My favorite food is ${food}!`) : console.log(`I recently ate ${food}.`);
 
 //------------------------- Arrays -------------------------//
 
