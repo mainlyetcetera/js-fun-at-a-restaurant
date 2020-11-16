@@ -7,12 +7,11 @@ const createRestaurant = name => ({
   }
 });
 
-function addMenuItem(restaurant, menuItem) {
-  var type = menuItem.type;
-  if (!restaurant.menus[type].includes(menuItem)) {
-    restaurant.menus[type].push(menuItem);
+const addMenuItem = (restaurant, item) => {
+  var type = item.type;
+  if (!restaurant.menus[type].includes(item)) {
+    restaurant.menus[type].push(item);
   }
-  // restaurant.menus[type].includes(menuItem) ? restaurant.menus[type] : restaurant.menus[type].push(menuItem)
 }
 
 function removeMenuItem(restaurant, menuItemName, menuItemType) {
