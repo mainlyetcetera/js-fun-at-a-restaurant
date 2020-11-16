@@ -20,13 +20,7 @@ const listItems = orders => {
   return result;
 }
 
-const searchOrder = (orders, name) => {
-  if (listItems(orders).includes(name)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+const searchOrder = (orders, name) => listItems(orders).includes(name) ? true : false;
 
 module.exports = {
   takeOrder,
