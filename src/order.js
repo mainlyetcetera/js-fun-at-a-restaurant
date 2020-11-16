@@ -7,12 +7,8 @@ const listItems = orders => {
     items.push(orders[i].item);
   }
 
-  for (let j = 0; j < orders.length; j++) {
-    if (j === items.length - 1) {
-      result += items[j];
-    } else {
-      result += items[j] + ', ';
-    }
+  for (let j = 0; j < orders.length; j++) {    
+    j === items.length - 1 ? result += items[j] : result += items[j] + ', ';
   }
 
   return result;
