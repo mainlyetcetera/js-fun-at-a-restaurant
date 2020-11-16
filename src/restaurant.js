@@ -14,14 +14,9 @@ const addMenuItem = (restaurant, item) => {
 
 const removeMenuItem = (restaurant, name, type) => {
   var itemsByType = restaurant.menus[type];
-  for (var i = 0; i < itemsByType.length; i++) {
-    if (itemsByType[i].name === name) {
-      itemsByType.splice(i, 1);
-      return `No one is eating our ${name} - it has been removed from the ${type} menu!`;
-    }    
-  }
-
-  return `Sorry, we don't sell ${name}, try adding a new recipe!`;
+  let isRemoved = false, removedItem;
+  itemsByType.forEach((item, i) => item.name === name ? (removedItem = item, itemsByType.splice(i, 1), isRemoved = true) : itemsByType);
+  return isRemoved ? `No one is eating our ${removedItem.name} - it has been removed from the ${removedItem.type} menu!` : `Sorry, we don't sell ${name}, try adding a new recipe!`;
 }
 
 module.exports = {
