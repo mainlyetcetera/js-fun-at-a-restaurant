@@ -1,7 +1,5 @@
 const takeOrder = (order, orders) => orders.length < 3 ? orders.push(order) : orders;
-function refundOrder(orderNumber, arrOfOrders) {
-  arrOfOrders.splice(orderNumber - 1, 1);
-}
+const refundOrder = (orderNumber, orders) => orders.splice(orderNumber - 1, 1);
 
 function listItems(arrOfOrders) {
   var result, arrOfItems;
