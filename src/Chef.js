@@ -4,12 +4,12 @@ class Chef {
     this.restaurant = restaurant;
   }
 
-  greetCustomer(name, isMorning) {    
+  greetCustomer(name, isMorning) {
     return isMorning ? `Good morning, ${name}!` : `Hello, ${name}!`;
   }
 
   checkForFood(foodItem) {
-    var foodItemType = foodItem.type;
+    let foodItemType = foodItem.type;
     if (this.restaurant.menus[foodItemType].includes(foodItem)) {
       return `Yes, we're serving ${foodItem.name} today!`;
     } else {
