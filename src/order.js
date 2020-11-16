@@ -20,13 +20,12 @@ const listItems = orders => {
   return result;
 }
 
-function searchOrder(arrOfOrders, orderName) {
-  if (listItems(arrOfOrders).includes(orderName)) {
+const searchOrder = (orders, name) => {
+  if (listItems(orders).includes(name)) {
     return true;
   } else {
     return false;
   }
-  // return listItems(arrOfOrders).includes(orderName) ? true : false;
 }
 
 module.exports = {
