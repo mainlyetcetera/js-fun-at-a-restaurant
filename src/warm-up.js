@@ -13,9 +13,9 @@
 // var type = "Dessert";
 // var inStock = 10
 
-var food = 'Pizza';
-var type = 'Staple';
-var inStock = 2;
+const food = 'Pizza';
+const type = 'Staple';
+const inStock = 2;
 
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
@@ -30,14 +30,14 @@ inStock -= 1;
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
 
-var isFavorite = true;
+const isFavorite = true;
 
 // Create a new variable named "shouldOrderMore", and use a comparison operator to
 // assign a boolean value to this variable. If "inStock" is less than 20, the
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-var shouldOrderMore = inStock < 20;
+let shouldOrderMore = inStock < 20;
 
 //------------------------- Conditionals -------------------------//
 
@@ -45,7 +45,7 @@ var shouldOrderMore = inStock < 20;
 // the statement 'I'm going to eat some [food]!', otherwise, log the statement
 // 'We need to get some more [food].'
 
-var stockCount = 0;
+let stockCount = 0;
 
 stockCount >= 1 ? console.log(`I'm going to eat some ${food.toLowerCase()}!`) : console.log(`We need to get some more ${food.toLowerCase()}.`);
 
@@ -66,7 +66,7 @@ if (isFavorite) {
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
 
-var vegetables = ['asparagus', 'broccoli', 'zucchini', 'cauliflower', 'spinach'];
+const vegetables = ['asparagus', 'broccoli', 'zucchini', 'cauliflower', 'spinach'];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
@@ -76,7 +76,7 @@ console.log(vegetables[2]);
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
 
-var fruits = ['apple', 'banana', 'grapes', 'peach', 'tomato?!', 'pineapple', 'plum'];
+const fruits = ['apple', 'banana', 'grapes', 'peach', 'tomato?!', 'pineapple', 'plum'];
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
@@ -88,7 +88,7 @@ console.log(fruits[4]);
 // keys: name, and isOpen. The value for name should the string 'King Soopers' (or your favorite grocery store), and
 // the value for isOpen should be true. Which other key value pairs would make sense to add to this object?
 
-var groceryStore = {
+const groceryStore = {
   name : 'King Soopers',
   isOpen : true,
   numOfAisles : 17,
